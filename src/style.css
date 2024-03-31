@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: larger;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -13,6 +14,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "CustomFontThin";
+  src: url("/Epilogue/static/Epilogue-Thin.ttf");
+}
+
+@font-face {
+  font-family: "CustomFontLight";
+  src: url("/Epilogue/static/Epilogue-Light.ttf");
+}
+
+@font-face {
+  font-family: "CustomFontRegular";
+  src: url("/Epilogue/static/Epilogue-Regular.ttf");
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,17 +38,23 @@ a:hover {
   color: #535bf2;
 }
 
+article {
+  border: 1px black solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  /* border: 2px aqua dotted; */
+  font-family: "CustomFontRegular";
+  background-color: bisque;
+  color: black;
 }
 
 button {
@@ -54,15 +76,105 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
+
+figure {
+  
+  
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 1px;
+  max-width: 30%;
+
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 10px;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  max-width: 79vw;
+}
+header {
+  font-size: 128px;
+
+  width: 90vw;
+  padding: 25px;
+}
+
+h1 {
+  /* border: 2px dashed pink; */
+  /* font-size: 3.2em; */
+  font-size: 128px;
+  line-height: 1.1;
+  padding: 25px;
+  margin: 0px;
+}
+h2 {
+  font-size: 40px;
+  
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+.leftImage {
+  float: left;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+.main {
+  max-width: 79vw;
+  text-align: left;
+  padding: 0px;
+
+  /* border: 2px black dashed; */
+}
+
+.mainImage {
+  min-width: 95%;
+
+  /* margin-top: 25px;
+            margin-right: 25px;
+            margin-left: 0px; */
+}
+
+.rightImage {
+  float:right;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 0px;
+  
+}
+
+.sidebar {
+  width: 15vw;
+  height: 80vh;
+  /* border: 2px green solid; */
+  padding: 10px;
+  position: relative;
+  float: right;
+  background-color: black;
+  color: bisque;
+  margin-right: 10px;
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  width: 100vw;
+  height: fit-content;
+  /* margin: 0 auto; */
+  padding: 0px;
   text-align: center;
+  /* border: 2px red solid; */
 }
 
 @media (prefers-color-scheme: light) {
